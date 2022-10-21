@@ -1,0 +1,436 @@
+/*Background, Body, & Header Style*/
+html {
+    background-color: #869960;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+header {
+    padding-top: 20px;
+    color: #617140;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+/*End of Background, Body, & Header Style*/
+
+/*Site Navigation*/
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #617140;
+    padding: 10px 20px;
+    border: 3px solid #e5e9dc;
+    border-bottom: none;
+    display: block;
+}
+
+.site-nav a:hover {
+    background-color: #e5e9dc;
+}
+/*End of Site Navigation*/
+
+/*Form Styles*/
+form {
+    background-color: #ececec;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type="email"], input[type="password"], select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #cdcdcd;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px #869960;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color: #FFF;
+    padding: 10px 0;
+    border: 1px solid #798A56;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid #535E3B;
+    background-color: #798A56;
+}
+/*End of Form Styles*/
+
+/*Table Styles*/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.col-novel {
+    width: 20%;
+}
+
+.col-OWW, .col-author {
+    width: 20%;
+}
+
+table th {
+    text-align: left;
+    background-color: #869960;
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+table th, table td {
+    border: 1px solid #869960;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: #e5e9dc;
+}
+
+table tr :nth-child(2),
+table tr :nth-child(3) {
+    text-align: center;
+}
+/*End of Table Styles*/
+
+/*Typography*/
+header h1 {
+    margin-bottom: 80px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 165%;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-shadow: 2px 10px 1px #999999;
+}
+
+header p {
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    color: green;
+}
+
+header p a {
+    text-decoration: none;
+}
+
+.p1 p {
+    margin-top: 10px;
+    text-indent: 25px;
+    color: gray;
+    line-height: 2;
+}
+/*End of Typography*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Content Style*/
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../HTML/Misc.Img/Green\ Vector\ Bg\ 1.jpg) left bottom repeat-x, #FFF url(../HTML/Misc.Img/Green\ Vector\ Bg\ 1.jpg) left top repeat-x;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-image: url(../HTML/Misc.Img/Arknights\ Endfield\ Img.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    margin-top: 17px;
+}
+
+.content-area {
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+}
+
+.main-area {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.support {
+    position: relative;
+    width: 30%;
+    float: left;
+    background-color: #e5e9dc;
+    background-image: linear-gradient(to bottom, #e5e9dc, #FFF);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 9;
+}
+
+.fix {
+    clear: both;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+/*End of Content Style*/
+
+/*Media Query*/
+@media screen and (mix-width:1300px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-area,
+    .support {
+        width: auto;
+        float: none;
+    }
+
+    .main-area {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .site-nav li {
+        width: 65%;
+        margin: 0;
+        margin-left: 115px;
+    }
+
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid #e5e9dc;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav li {
+        width: 70%;
+        margin-left: 65px;
+    }
+
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid #e5e9dc;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .content-area {
+        padding-top: 20px;
+    }
+}
+
+.info-box {
+    background-color: #efeedb;
+    border: 5px solid #e6e5c2;
+    padding: 20px 40px 7px 40px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    .hide-small {
+        display: none;
+    }    
+}
+/*End of Media Query*/
+
+/*Slideshow Style*/
+.image-banner {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    z-index: 10;
+    margin-bottom: 65px;
+    padding-bottom: 30px;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.cycle-slideshow {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.slide {
+    width: 70%;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(98, 77, 77, 0.5);
+    color: black;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide-text h3 {
+    margin: 0;
+}
+/*End of Slideshow Style*/
+
+/*Previous and Next*/
+.cycle-prev, .cycle-next {
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cycle-next {
+    right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+/*End of Previous and Next*/
+
+/*Font Color, Style, and Highlights*/
+p {
+    color: gray;
+}
+
+footer p {
+    color: red;
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    font-size: 165%;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header p {
+    color: green;
+}
+
+aside {
+    color: #617140;
+}
+
+header p span {
+    color: blue;
+}
+
+.highlight {
+    color: crimson;
+    background-color: yellow;
+}
+
+.brand-color {
+    color: yellow;
+    background-color: blue;
+}
+/*End of Font Color, Style, and Highlights*/
+
